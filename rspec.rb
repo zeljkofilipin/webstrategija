@@ -1,11 +1,7 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-require 'webstrategija'
-
-describe Webstrategija do
-  before(:each) do
-    @webstrategija = Webstrategija.new
+describe "Watir" do
+  before(:all) do
+		require "watir-webdriver"
+    @browser = Watir::Browser.new :ff
   end
 
   it "should desc" do
