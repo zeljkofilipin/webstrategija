@@ -1,15 +1,14 @@
 describe "Watir" do
   before(:all) do
 		require "watir-webdriver"
-#    @browser = Watir::Browser.new :ff
+#		@browser = Watir::Browser.new :ff
 #		@times = 10
 
-    @browser = Watir::Browser.new :chrome
+		@browser = Watir::Browser.new :chrome
 		@times = 1
-
   end
 	it "should open Github home page when asked for github.com" do
-		@browser.goto "github.com"
+		@browser.goto "http://github.com/"
 		@browser.url.should == "http://github.com/"
 	end
 	it "should find Bret's repository when searching for Watir" do
